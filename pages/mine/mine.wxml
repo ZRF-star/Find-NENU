@@ -1,0 +1,68 @@
+<view>
+<view class="hr"></view>
+<!--登录-->
+<view id="myLogin">
+   <block wx:if='{{isLogin}}'>
+      <image id='myIcon' src="{{src}}"></image>
+      <text id="nickName">{{nickName}}</text>
+   </block>
+   <button wx:else open-type="getUserInfo" bindgetuserinfo="getMyInfo">未登录，点此登录</button>
+</view>
+
+
+<!--下面的内容-->
+<view class="hr"></view>
+<view class="item" bindtap="userpublish">
+     <view class="icons"><image style="width:45rpx;height:45rpx;" src="/images/publish.png" 
+    ></image>
+     </view>
+     <view class="order">我要发布</view>
+     <view class="arrow">
+       <text>></text>
+     </view>
+</view>
+
+<view class="item" bindtap="mymessage">
+     <view class="icons"><image style="width:45rpx;height:45rpx;" src="/images/msg.png" 
+    ></image>
+     </view>
+     <view class="order">我的消息</view>
+     <view class="arrow">
+       <text>></text>
+     </view>
+</view>
+<view class="item" bindtap="mycollect">
+     <view class="icons"><image style="width:45rpx;height:45rpx;" src="/images/collect.png" 
+    ></image>
+     </view>
+     <view class="order">我的收藏</view>
+     <view class="arrow">
+       <text>></text>
+     </view>
+</view>
+
+<view class="hr"></view>
+
+<view class="item" bindtap="mycpt">
+     <view class="icons"><image style="width:45rpx;height:45rpx;" src="/images/tousu.png" 
+    ></image>
+     </view>
+     <view class="order">我要投诉</view>
+     <view class="arrow">
+       <text>></text>
+     </view>
+</view>
+
+<view class="item" bindtap="myuserfile">
+     <view class="icons"><image style="width:45rpx;height:45rpx;" src="/images/xieyi.png" 
+    ></image>
+     </view>
+     <view class="order">用户协议</view>
+     <view class="arrow">
+       <text>></text>
+     </view>
+</view>
+<view class="hr"></view>
+
+
+</view>

@@ -1,0 +1,9 @@
+<view style="height:600rpx;width:100%;">
+
+<image src="/images/cute.png" style="width:200rpx;height:200rpx;"></image>
+
+<view class="textC">
+<text>您还没有消息哟☹</text>
+</view>
+
+</view>

@@ -1,0 +1,129 @@
+<view class="tab">
+
+<view class="tab-item tab-item-selected" bindtap="tabItemTap" data-view="1" wx:if="{{currentView==1}}">找人</view>
+<view class="tab-item" bindtap="tabItemTap" data-view="1"  wx:if="{{currentView!=1}}">找人</view>
+
+<view class="tab-item tab-item-selected" bindtap="tabItemTap" data-view="2" wx:if="{{currentView==2}}">找物</view>
+<view class="tab-item" bindtap="tabItemTap" data-view="2"  wx:if="{{currentView!=2}}">找物</view>
+</view>
+
+<!--这是海报-->
+<swiper indicator-daots="true" autoplay="true" interval="5000" duration="500" mode='aspectFit'>
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+<!--这是找人页面-->
+<view hidden="{{currentView!=1}}" class="item" style="height:1500rpx;">
+<view class="hr"></view>
+  <view class="itemText">
+    <view class="wenzi twoView">
+      <view><image class="touxiang" src="/images/6.jpeg" ></image></view>
+      <view class="nicheng">小金鱼</view>
+    </view>
+    <!--这里是发布信息的-->
+    <view class="wenzi"><text>我想找一个会UI设计的小姐姐</text></view>
+    <view class="wenzi"><image style="height:600rpx;width:600rpx;" src="/images/4.jpg"></image></view>
+  
+    <view class="wenzi iconsGroup">
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/like.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/comment.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/zhuanfa.png"></image></view>
+    </view>
+</view>
+<!--从这里开始复制的-->
+<view class="hr"></view>
+  <view class="itemText">
+    <view class="wenzi twoView">
+      <view><image class="touxiang" src="/images/6.jpeg" ></image></view>
+      <view class="nicheng">小金鱼</view>
+    </view>
+    <!--这里是发布信息的-->
+    <view class="wenzi"><text>我想找一个会UI设计的小姐姐</text></view>
+    <view class="wenzi"><image style="height:600rpx;width:600rpx;" src="/images/4.jpg"></image></view>
+  
+    <view class="wenzi iconsGroup">
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/like.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/comment.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/zhuanfa.png"></image></view>
+    </view>
+</view>
+<!--从这里开始复制的-->
+<view class="hr"></view>
+  <view class="itemText">
+    <view class="wenzi twoView">
+      <view><image class="touxiang" src="/images/6.jpeg" ></image></view>
+      <view class="nicheng">小金鱼</view>
+    </view>
+    <!--这里是发布信息的-->
+    <view class="wenzi"><text>我想找一个会UI设计的小姐姐</text></view>
+    <view class="wenzi"><image style="height:600rpx;width:600rpx;" src="/images/4.jpg"></image></view>
+  
+    <view class="wenzi iconsGroup">
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/like.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/comment.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/zhuanfa.png"></image></view>
+    </view>
+</view>
+</view>
+
+
+
+<!--这是找物页面-->
+<view hidden="{{currentView!=2}}" class="item" style="height:1500rpx;">
+<!--从这里开始复制的-->
+<view class="hr"></view>
+  <view class="itemText">
+    <view class="wenzi twoView">
+      <view><image class="touxiang" src="/images/6.jpeg" ></image></view>
+      <view class="nicheng">阳光</view>
+    </view>
+    <!--这里是发布信息的-->
+    <view class="wenzi"><text>这是一个又丢了饭卡的朋友，难受香菇！大家帮帮这个可怜的孩纸啊！</text></view>
+    <view class="wenzi"><image style="height:600rpx;width:600rpx;" src="/images/3.jpg"></image></view>
+  
+    <view class="wenzi iconsGroup">
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/like.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/comment.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/zhuanfa.png"></image></view>
+    </view>
+</view>
+<!--从这里开始复制的-->
+<view class="hr"></view>
+  <view class="itemText">
+    <view class="wenzi twoView">
+      <view><image class="touxiang" src="/images/6.jpeg" ></image></view>
+      <view class="nicheng">阳光</view>
+    </view>
+    <!--这里是发布信息的-->
+    <view class="wenzi"><text>这是一个又丢了饭卡的朋友，难受香菇！大家帮帮这个可怜的孩纸啊！</text></view>
+    <view class="wenzi"><image style="height:600rpx;width:600rpx;" src="/images/3.jpg"></image></view>
+  
+    <view class="wenzi iconsGroup">
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/like.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/comment.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/zhuanfa.png"></image></view>
+    </view>
+</view>
+<!--从这里开始复制的-->
+<view class="hr"></view>
+  <view class="itemText">
+    <view class="wenzi twoView">
+      <view><image class="touxiang" src="/images/6.jpeg" ></image></view>
+      <view class="nicheng">阳光</view>
+    </view>
+    <!--这里是发布信息的-->
+    <view class="wenzi"><text>这是一个又丢了饭卡的朋友，难受香菇！大家帮帮这个可怜的孩纸啊！</text></view>
+    <view class="wenzi"><image style="height:600rpx;width:600rpx;" src="/images/3.jpg"></image></view>
+  
+    <view class="wenzi iconsGroup">
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/like.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/comment.png"></image></view>
+      <view class="icons"><image style="height:40rpx;width:40rpx;" src="/images/zhuanfa.png"></image></view>
+    </view>
+</view>
+
+</view>

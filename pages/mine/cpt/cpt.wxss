@@ -1,0 +1,18 @@
+.text{
+  margin: 20rpx;
+}
+.radioTwo{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+radio{
+  margin-right: 150rpx;
+}
+button{
+  margin-top: 40rpx;
+  background: #20b9fc;
+  color: #fff;
+  width: 80%;
+}

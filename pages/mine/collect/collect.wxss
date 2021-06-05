@@ -1,0 +1,14 @@
+/* pages/mine/collect/collect.wxss */
+image{
+  margin-top:300rpx;
+  margin-left: 280rpx;
+}
+.textC{
+  margin-top: 80rpx;
+  margin-left: 260rpx;
+}
+.but{
+  background: #20b9fc;
+  color: #fff;
+  margin-top: 80rpx;
+}

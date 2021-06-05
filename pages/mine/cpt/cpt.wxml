@@ -1,0 +1,25 @@
+<!---->
+
+<form>
+
+<view class="radioGroup">
+<view class="text">
+<text>请选择投诉类型并填写详情：</text>
+</view>
+<view class="radioTwo">
+<radio>垃圾广告</radio>
+<radio>淫秽色情</radio>
+</view>
+
+<view class="radioTwo">
+<radio>恶意骚扰</radio>
+<radio>私信骚扰</radio>
+</view>
+
+<view class="radioTwo">
+<radio>涉政暴恐</radio>
+<radio>其他</radio>
+</view>
+</view>
+<button form-type="submit">提交</button>
+</form>

@@ -1,0 +1,40 @@
+.hr{
+  height: 10px;
+  background-color: #F5F5F5;
+}
+#myLogin{
+  background-color: #20b9fc;
+  width:100%;
+  height:400rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#myIcon{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+#nickName{
+  color: white;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 88rpx;
+  line-height: 84rpx;
+  border-bottom: 1rpx solid #F5F5F5;
+  background: #fff;
+}
+.icons{
+  padding: 15rpx;
+}
+.arrow{
+  margin-left:500rpx;
+}
+
+
+

@@ -1,0 +1,64 @@
+<view class="tab">
+<view class="tab-item tab-item-selected" bindtap="tabItemTap" data-view="1" wx:if="{{currentView==1}}">好书</view>
+<view class="tab-item" bindtap="tabItemTap" data-view="1"  wx:if="{{currentView!=1}}">好书</view>
+
+<view class="tab-item tab-item-selected" bindtap="tabItemTap" data-view="2" wx:if="{{currentView==2}}">好电影</view>
+<view class="tab-item" bindtap="tabItemTap" data-view="2"  wx:if="{{currentView!=2}}">好电影</view>
+</view>
+
+
+
+<swiper indicator-daots="true" autoplay="true" interval="5000" duration="500" style="height：150rpx">
+  <block wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+     <swiper-item>
+        <image src="{{item.src}}" class="slide-image"></image>
+     </swiper-item>
+  </block>
+</swiper>
+
+
+<view class="hr"></view>
+<!--这一部分是书-->
+<view hidden="{{currentView!=1}}" class="item" style="height:1500rpx;">
+<view>
+
+<block wx:for="{{bookList}}" wx:key="{{item.id}}">
+<navigator url="BookDetails/BookDetails">
+
+<view class="item-list">  
+<view class="item-img"><image bindtap="viewImg" class="item-img" src="{{item.img}}"></image></view>
+<view class="item-booktext">
+ <view class="item-book"><text>书名：{{item.title}}</text></view>
+ <view class="item-book"><text>作者：{{item.writer}}</text></view>
+ <view class="item-book"><text>内容简介：{{item.content}}</text></view>
+</view> 
+</view>
+
+</navigator>
+</block>
+</view>
+</view>
+
+<!--这一部分是电影-->
+
+<view hidden="{{currentView!=2}}" class="item" style="height:1500rpx;">
+
+<block wx:for="{{movieList}}">
+  <navigator url="/BookDetails/BookDetails?index={{item.id}}">
+
+<view class="item-list"  bindtap="tapMovie"> 
+  <view class="item-img"><image bindtap="viewImg" class="item-img" src="{{item.img}}"></image></view>
+<view class="item-booktext">
+ <view class="item-book"><text>电影名：{{item.title}}</text></view>
+ <view class="item-book"><text>导演：{{item.dierctor}}</text></view>
+ <view class="item-book"><text>主演：{{item.actor}}</text></view>
+ <view class="item-book"><text>内容简介：{{item.content}}</text></view>
+</view>
+</view>
+</navigator>
+</block>
+
+</view>
+
+
+

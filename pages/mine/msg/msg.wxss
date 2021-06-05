@@ -1,0 +1,9 @@
+
+image{
+  margin-top:300rpx;
+  margin-left: 280rpx;
+}
+.textC{
+  margin-top: 80rpx;
+  margin-left: 260rpx;
+}

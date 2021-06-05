@@ -1,0 +1,15 @@
+<form bindsubmit="submitdate">
+<form>
+ <view class="content">
+     <view class="text">
+      <textarea name="inputtext" placeholder="输入你想发布的内容text" auto-focus maxlength="{{maxlength}}">
+      </textarea>
+     </view>
+     <view class="image">
+       <image name="photo" src="{{src}}" bindtap="chooseImage" mode="scaleToFill"></image>
+       <icon type="clear" hidden="{{flag}}" bindtap="clear"></icon>
+     </view>
+</view>
+</form>
+<button type=" " form-type="submit">提交</button>
+</form>

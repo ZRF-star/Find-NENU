@@ -1,0 +1,14 @@
+<!--pages/mine/collect/collect.wxml-->
+<view style="height:600rpx;width:100%;">
+
+<image src="/images/cute.png" style="width:200rpx;height:200rpx;"></image>
+
+<view class="textC">
+<text>您还没有收藏哟☹</text>
+</view>
+
+<view>
+   <button style="width:60%;"class="but">去收藏</button>
+</view>
+
+</view>

@@ -1,0 +1,51 @@
+.tab{
+  height: 88rpx;
+  line-height: 84rpx;
+  background: #fff;
+
+}
+.tab-item{
+  float: left;
+  width: 50%;
+  height: 86rpx;
+  font-size: 12pt;
+  text-align: center;
+}
+.tab-item-selected{
+  color: #20b9fc;
+  border-bottom: 4rpx solid #20b9fc;
+}
+.slide-image{
+  width: 100%;
+}
+
+.hr{
+  height: 10rpx;
+}
+
+/*找人页面框架补充*/
+.touxiang{
+  border-radius: 50%;
+  height: 100rpx;
+  width:100rpx;
+}
+.nicheng{
+  padding: 30rpx;
+}
+.twoView{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #F5F5F5;
+  border-top: 1rpx solid #F5F5F5;
+}
+.wenzi{
+  display: flex;
+  flex-direction: row;
+}
+
+.iconsGroup{
+  margin-left: 550rpx;
+}
+.icons{
+  margin-left: 20rpx;
+}
